@@ -6,17 +6,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class ProductMain extends AppCompatActivity {
+public class stef_MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_product_main);
-
-        /*public void editProduct(View view){
-
-            Intent intent1=new Intent(packageContext this, ProductMain.class);
-            startActivity(intent1);
-        }*/
+        setContentView(R.layout.stef_activity_main);
     }
+
+    public void AddProduct(View view) {
+        Intent intent1=new  Intent(this, stef_ProductMain.class);
+        startActivity(intent1);
+    }
+
+
 }

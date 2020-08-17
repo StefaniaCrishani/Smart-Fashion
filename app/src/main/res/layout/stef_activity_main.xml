@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#FFFBEA"
+    tools:context=".stef_MainActivity">
 
     <TextView
         android:id="@+id/pid"
@@ -70,6 +71,8 @@
         android:layout_width="116dp"
         android:layout_height="53dp"
         android:background="#5C5B5B"
+        android:onClick="AddProduct"
+        android:text="@string/post_product_to_page"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -77,8 +80,7 @@
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.987"
-        tools:text="@string/post_product_to_page" />
+        app:layout_constraintVertical_bias="0.987" />
 
     <ImageView
         android:id="@+id/imageView3"

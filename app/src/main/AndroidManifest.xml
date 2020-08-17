@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ProductMain"></activity>
-        <activity android:name=".UpdateProduct" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".stef_ProductMain"></activity>
+        <activity android:name=".stef_UpdateProduct" />
+        <activity android:name=".stef_MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

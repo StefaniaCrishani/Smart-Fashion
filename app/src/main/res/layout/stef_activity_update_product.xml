@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UpdateProduct">
+    android:background="#FFFBEA"
+    tools:context=".stef_UpdateProduct">
 
     <TextView
         android:id="@+id/productid"
@@ -75,6 +76,7 @@
         android:layout_width="108dp"
         android:layout_height="52dp"
         android:background="#5C5B5B"
+        android:onClick="updateproduct"
         android:text="@string/update_button"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
@@ -95,6 +97,7 @@
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold|italic"
+        android:onClick="delete"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.775"
