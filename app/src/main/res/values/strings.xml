@@ -2,8 +2,8 @@
     <string name="app_name">Smart Fashion</string>
     <string name="pid"> Product ID</string>
     <string name="pname">Product Name</string>
+    <string name="sizes">Sizes</string>
     <string name="price">Price</string>
-    <string name="dis">Product Description</string>
     <string name="post_product_to_page">Post</string>
     <string name="add_product_title">Add Product</string>
     <string name="add_product_image">Add Image</string>
@@ -16,4 +16,5 @@
     <string name="category">Category</string>
     <string name="tshirt">Long Dress with flower print</string>
     <string name="deleteproduct">Delete</string>
+    <string name="colors">Colors</string>
 </resources>
