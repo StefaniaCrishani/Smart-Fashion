@@ -9,19 +9,37 @@
 
     <Button
         android:id="@+id/post"
-        android:layout_width="116dp"
-        android:layout_height="53dp"
-        android:background="#5C5B5B"
+        android:layout_width="94dp"
+        android:layout_height="51dp"
+        android:background="#D6D3DC"
         android:onClick="AddProduct"
         android:text="@string/post_product_to_page"
+        android:textColor="#070707"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintHorizontal_bias="0.697"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.92" />
+        app:layout_constraintVertical_bias="0.929" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="94dp"
+        android:layout_height="51dp"
+        android:background="#B7BACC"
+        android:onClick="AddProduct"
+        android:text="@string/save"
+        android:textColor="#070707"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.337"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.931" />
 
     <TextView
         android:id="@+id/addimg"

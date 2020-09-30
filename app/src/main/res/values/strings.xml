@@ -17,4 +17,5 @@
     <string name="tshirt">Long Dress with flower print</string>
     <string name="deleteproduct">Delete</string>
     <string name="colors">Enter product colors</string>
+    <string name="save">Save</string>
 </resources>

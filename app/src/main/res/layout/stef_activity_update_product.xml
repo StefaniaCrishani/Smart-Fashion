@@ -8,22 +8,6 @@
     tools:context=".stef_UpdateProduct">
 
     <TextView
-        android:id="@+id/productid"
-        android:layout_width="322dp"
-        android:layout_height="39dp"
-        android:background="#DADDDD"
-        android:textColor="#252424"
-        android:textSize="24sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.519"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.527"
-        tools:text="@string/product_id" />
-
-    <TextView
         android:id="@+id/productid2"
         android:layout_width="320dp"
         android:layout_height="38dp"
@@ -72,7 +56,7 @@
         tools:text="@string/product_name" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/update"
         android:layout_width="108dp"
         android:layout_height="52dp"
         android:background="#5C5B5B"
@@ -89,15 +73,15 @@
         app:layout_constraintVertical_bias="0.969" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/delete"
         android:layout_width="108dp"
         android:layout_height="52dp"
         android:background="#5C5B5B"
+        android:onClick="updateproduct"
         android:text="@string/deleteproduct"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold|italic"
-        android:onClick="delete"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.775"
@@ -134,11 +118,9 @@
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/productid"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -181,5 +163,20 @@
         app:layout_constraintTop_toBottomOf="@+id/view"
         app:layout_constraintVertical_bias="0.055"
         app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="315dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="238dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/product_id"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
