@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "878048545033",
+    "firebase_url": "https://smartfashion-803c8.firebaseio.com",
+    "project_id": "smartfashion-803c8",
+    "storage_bucket": "smartfashion-803c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878048545033:android:496fb15dcbdd01a199abd8",
+        "android_client_info": {
+          "package_name": "com.example.smartfashion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878048545033-635n5g3427qosj547kahfie2il6qjfsu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFL7OeLiSqqCsbXCBOmnqJhaDUSgIadk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878048545033-635n5g3427qosj547kahfie2il6qjfsu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

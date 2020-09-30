@@ -7,85 +7,6 @@
     android:background="#FFFBEA"
     tools:context=".stef_MainActivity">
 
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="375dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="19dp"
-        android:background="#DADDDD"
-        android:text="@string/pname"
-        android:textColor="#201E1E"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.361"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pid"
-        app:layout_constraintVertical_bias="0.006" />
-
-    <TextView
-        android:id="@+id/pid"
-        android:layout_width="375dp"
-        android:layout_height="34dp"
-        android:background="#DADDDD"
-        android:text="@string/pid"
-        android:textColor="#201E1E"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.361"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.407" />
-
-    <TextView
-        android:id="@+id/price"
-        android:layout_width="375dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="18dp"
-        android:background="#DADDDD"
-        android:text="@string/price"
-        android:textColor="#201E1E"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.361"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/sizes"
-        android:layout_width="375dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="19dp"
-        android:background="#DADDDD"
-        android:text="@string/sizes"
-        android:textColor="#201E1E"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.361"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/price"
-        app:layout_constraintVertical_bias="0.005" />
-
-    <TextView
-        android:id="@+id/colors"
-        android:layout_width="375dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="17dp"
-        android:background="#DADDDD"
-        android:text="@string/colors"
-        android:textColor="#201E1E"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.361"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sizes"
-        app:layout_constraintVertical_bias="0.027" />
-
     <Button
         android:id="@+id/post"
         android:layout_width="116dp"
@@ -164,5 +85,88 @@
         app:layout_constraintTop_toBottomOf="@+id/view2"
         app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@android:drawable/ic_input_add" />
+
+    <EditText
+        android:id="@+id/pid"
+        android:layout_width="321dp"
+        android:layout_height="32dp"
+        android:background="#B5C2DC"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/pid"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/colors"
+        android:layout_width="321dp"
+        android:layout_height="32dp"
+        android:background="#B5C2DC"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/colors"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sizes"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <EditText
+        android:id="@+id/sizes"
+        android:layout_width="321dp"
+        android:layout_height="32dp"
+        android:background="#B5C2DC"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/sizes"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="321dp"
+        android:layout_height="32dp"
+        android:background="#B5C2DC"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/price"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="321dp"
+        android:layout_height="32dp"
+        android:background="#B5C2DC"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/pname"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pid"
+        app:layout_constraintVertical_bias="0.062" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
