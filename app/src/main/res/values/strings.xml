@@ -18,4 +18,6 @@
     <string name="deleteproduct">Delete</string>
     <string name="colors">Enter product colors</string>
     <string name="save">Save</string>
+    <string name="size">Small</string>
+    <string name="color">Blue and Pink</string>
 </resources>

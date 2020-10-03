@@ -41,6 +41,33 @@ public class stef_MainActivity extends AppCompatActivity {
 
         prd = new Product();
 
+        butpost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dbRef = FirebaseDatabase.getInstance().getReference().child("Product/prd");
+                dbRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                        if (dataSnapshot.hasChildren()) {
+                            txtpid.setText(dataSnapshot.child("pid").getValue().toString());
+                            txtname.setText(dataSnapshot.child("name").getValue().toString());
+                            txtprice.setText(dataSnapshot.child("price").getValue().toString());
+                            txtsizes.setText(dataSnapshot.child("sizes").getValue().toString());
+                            txtcolors.setText(dataSnapshot.child("colors").getValue().toString());
+                        } else
+                            Toast.makeText(getApplicationContext(), "No Sourse to display", Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+
+                });
+            }
+        });
+
         butsave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,7 +90,7 @@ public class stef_MainActivity extends AppCompatActivity {
                         prd.setSizes(txtsizes.getText().toString().trim());
                         prd.setSizes(txtcolors.getText().toString().trim());
 
-                        //dbRef.push().setValue(std);
+                        //dbRef.push().setValue(prd);
                         dbRef.child("prd1").setValue(prd);
 
                         Toast.makeText(getApplicationContext(), "Data saved success", Toast.LENGTH_SHORT).show();
@@ -75,32 +102,6 @@ public class stef_MainActivity extends AppCompatActivity {
             }
         });
 
-        butsave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                DatabaseReference readRef = FirebaseDatabase.getInstance().getReference().child("Product").child("prd1");
-                readRef.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-
-                        if (dataSnapshot.hasChildren()) {
-                            txtpid.setText(dataSnapshot.child("pid").getValue().toString());
-                            txtname.setText(dataSnapshot.child("name").getValue().toString());
-                            txtprice.setText(dataSnapshot.child("price").getValue().toString());
-                            txtsizes.setText(dataSnapshot.child("sizes").getValue().toString());
-                            txtcolors.setText(dataSnapshot.child("colors").getValue().toString());
-                        } else
-                            Toast.makeText(getApplicationContext(), "No Sourse to display", Toast.LENGTH_SHORT).show();
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                    }
-
-                });
-            }
-        });
 
 
     }
